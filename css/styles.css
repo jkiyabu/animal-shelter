@@ -1,10 +1,15 @@
-ul{
+*{
+
 
 }
-
+.menu{
+  
+  list-style-type: none;
+}
 li{
-  float: inherit;
-  margin-left: 50px;
+  float: left;
+  margin-left: 400px;
+  text-align: center;
 }
 
 img {
@@ -20,6 +25,30 @@ h2 {
   text-align: center;
   text-decoration: underline;
 }
-p{
-  
+
+@media screen and (min-width: 700px) {
+  .animals {
+    width: 100%;
+    padding: 2px;
+  }
+  .column {
+    width: 20%;
+    float: left;
+
+  }
+  .info {
+    width: 100%;
+  }
+
+  body {
+    background-color: orange;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: teal;
+  }
 }
